@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel - RegressionSuite">
+
+	<listeners>
+		<listener class-name="nag.worldcup.testListeners.TestListener" />
+	</listeners>
+
+	 
+	<test name="Test Application - Chrome">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="nag.worldcup.testcases.Test1" />
+		</classes>
+	</test>
+	
+
+</suite> <!-- Suite -->
